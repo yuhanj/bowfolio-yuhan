@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,6 +18,13 @@
 		3915846E250319E30080C1FC /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3915846D250319E30080C1FC /* AuthView.swift */; };
 		3915847025031A120080C1FC /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3915846F25031A120080C1FC /* MainView.swift */; };
 		3915847225031A4A0080C1FC /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3915847125031A4A0080C1FC /* SignUpView.swift */; };
+		39158474250375DF0080C1FC /* ProfilesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39158473250375DF0080C1FC /* ProfilesView.swift */; };
+		39158476250375F10080C1FC /* ProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39158475250375F10080C1FC /* ProjectsView.swift */; };
+		39158478250376010080C1FC /* InterestsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39158477250376010080C1FC /* InterestsView.swift */; };
+		3915847A2503760D0080C1FC /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391584792503760D0080C1FC /* FilterView.swift */; };
+		397566AE25037A0D0074F90E /* Pages in Frameworks */ = {isa = PBXBuildFile; productRef = 397566AD25037A0D0074F90E /* Pages */; };
+		397566B22503C0690074F90E /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397566B12503C0690074F90E /* Profile.swift */; };
+		397566B42503C1080074F90E /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397566B32503C1080074F90E /* ProfileViewModel.swift */; };
 		8DFFB6D372BC8C2D7A9FA1B5 /* Pods_bowfolio_yuhan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C219E291FCCCC30177C8628 /* Pods_bowfolio_yuhan.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +43,12 @@
 		3915846D250319E30080C1FC /* AuthView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
 		3915846F25031A120080C1FC /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		3915847125031A4A0080C1FC /* SignUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		39158473250375DF0080C1FC /* ProfilesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilesView.swift; sourceTree = "<group>"; };
+		39158475250375F10080C1FC /* ProjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsView.swift; sourceTree = "<group>"; };
+		39158477250376010080C1FC /* InterestsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestsView.swift; sourceTree = "<group>"; };
+		391584792503760D0080C1FC /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
+		397566B12503C0690074F90E /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		397566B32503C1080074F90E /* ProfileViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		9C219E291FCCCC30177C8628 /* Pods_bowfolio_yuhan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_bowfolio_yuhan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC8A515D7A6E61A6C362AFC0 /* Pods-bowfolio-yuhan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bowfolio-yuhan.release.xcconfig"; path = "Target Support Files/Pods-bowfolio-yuhan/Pods-bowfolio-yuhan.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -46,6 +59,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DFFB6D372BC8C2D7A9FA1B5 /* Pods_bowfolio_yuhan.framework in Frameworks */,
+				397566AE25037A0D0074F90E /* Pages in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +112,7 @@
 		39158468250318860080C1FC /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				397566B32503C1080074F90E /* ProfileViewModel.swift */,
 				391584662503186C0080C1FC /* SessionStore.swift */,
 			);
 			path = ViewModels;
@@ -110,6 +125,10 @@
 				3915847125031A4A0080C1FC /* SignUpView.swift */,
 				3915846D250319E30080C1FC /* AuthView.swift */,
 				3915846F25031A120080C1FC /* MainView.swift */,
+				39158473250375DF0080C1FC /* ProfilesView.swift */,
+				39158475250375F10080C1FC /* ProjectsView.swift */,
+				39158477250376010080C1FC /* InterestsView.swift */,
+				391584792503760D0080C1FC /* FilterView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -117,6 +136,7 @@
 		3915846A250318980080C1FC /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				397566B12503C0690074F90E /* Profile.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -156,6 +176,9 @@
 			dependencies = (
 			);
 			name = "bowfolio-yuhan";
+			packageProductDependencies = (
+				397566AD25037A0D0074F90E /* Pages */,
+			);
 			productName = "bowfolio-yuhan";
 			productReference = 3915844D250313550080C1FC /* bowfolio-yuhan.app */;
 			productType = "com.apple.product-type.application";
@@ -184,6 +207,9 @@
 				Base,
 			);
 			mainGroup = 39158444250313550080C1FC;
+			packageReferences = (
+				397566AC25037A0D0074F90E /* XCRemoteSwiftPackageReference "Pages" */,
+			);
 			productRefGroup = 3915844E250313550080C1FC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -254,11 +280,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3915847A2503760D0080C1FC /* FilterView.swift in Sources */,
 				39158451250313550080C1FC /* AppDelegate.swift in Sources */,
 				3915847025031A120080C1FC /* MainView.swift in Sources */,
 				3915846E250319E30080C1FC /* AuthView.swift in Sources */,
 				3915847225031A4A0080C1FC /* SignUpView.swift in Sources */,
+				39158478250376010080C1FC /* InterestsView.swift in Sources */,
+				397566B42503C1080074F90E /* ProfileViewModel.swift in Sources */,
+				39158474250375DF0080C1FC /* ProfilesView.swift in Sources */,
 				3915846C250319390080C1FC /* ContentView.swift in Sources */,
+				397566B22503C0690074F90E /* Profile.swift in Sources */,
+				39158476250375F10080C1FC /* ProjectsView.swift in Sources */,
 				39158453250313550080C1FC /* SceneDelegate.swift in Sources */,
 				391584672503186C0080C1FC /* SessionStore.swift in Sources */,
 			);
@@ -456,6 +488,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		397566AC25037A0D0074F90E /* XCRemoteSwiftPackageReference "Pages" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nachonavarro/Pages";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		397566AD25037A0D0074F90E /* Pages */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 397566AC25037A0D0074F90E /* XCRemoteSwiftPackageReference "Pages" */;
+			productName = Pages;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 39158445250313550080C1FC /* Project object */;
 }

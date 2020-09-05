@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import FirebaseAuth
 import Firebase
 import FirebaseFirestore
 import Combine
@@ -23,11 +24,12 @@ class SessionStore: ObservableObject {
         return self.session?.email ?? ""
     }
     
-//    func createProfile() {
-//        db.collection("userProfiles").document(session?.uid ?? "007").setData(["name": session?.email ?? "", "id": session?.uid ?? "007", "comment": "Say something!"])
-//
-//    }
-
+    func createProfile() {
+        db.collection("Profiles").document(session?.uid ?? "007").setData(["name": session?.email ?? "", "id": session?.uid ?? "007", "comment": "Say something!", "projects": [String](), "interests": [String](), "avatar": "https://randomuser.me/api/portraits/men/97.jpg"
+        ], merge: true)
+        
+    }
+    
     func listen() {
         handle = Auth.auth().addStateDidChangeListener({ (auth, user) in
             if let user = user {
@@ -76,5 +78,11 @@ struct User {
     init(uid:String, email: String?) {
         self.uid = uid
         self.email = email
+    }
+}
+
+struct SessionStore_Previews: PreviewProvider {
+    static var previews: some View {
+        /*@START_MENU_TOKEN@*/Text("Hello, World!")/*@END_MENU_TOKEN@*/
     }
 }

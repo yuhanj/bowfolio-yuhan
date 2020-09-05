@@ -21,7 +21,7 @@ struct SignUpView: View {
             } else {
                 self.email = ""
                 self.password = ""
-//                self.session.createProfile()
+                self.session.createProfile()
             }
         }
     }
