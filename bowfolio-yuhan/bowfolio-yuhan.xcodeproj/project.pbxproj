@@ -1,0 +1,461 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		39158451250313550080C1FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39158450250313550080C1FC /* AppDelegate.swift */; };
+		39158453250313550080C1FC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39158452250313550080C1FC /* SceneDelegate.swift */; };
+		39158457250313590080C1FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39158456250313590080C1FC /* Assets.xcassets */; };
+		3915845A250313590080C1FC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39158459250313590080C1FC /* Preview Assets.xcassets */; };
+		3915845D250313590080C1FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3915845B250313590080C1FC /* LaunchScreen.storyboard */; };
+		39158465250314130080C1FC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 39158464250314130080C1FC /* GoogleService-Info.plist */; };
+		391584672503186C0080C1FC /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391584662503186C0080C1FC /* SessionStore.swift */; };
+		3915846C250319390080C1FC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3915846B250319390080C1FC /* ContentView.swift */; };
+		3915846E250319E30080C1FC /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3915846D250319E30080C1FC /* AuthView.swift */; };
+		3915847025031A120080C1FC /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3915846F25031A120080C1FC /* MainView.swift */; };
+		3915847225031A4A0080C1FC /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3915847125031A4A0080C1FC /* SignUpView.swift */; };
+		8DFFB6D372BC8C2D7A9FA1B5 /* Pods_bowfolio_yuhan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C219E291FCCCC30177C8628 /* Pods_bowfolio_yuhan.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		137DA8776D764BA42833E7AF /* Pods-bowfolio-yuhan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bowfolio-yuhan.debug.xcconfig"; path = "Target Support Files/Pods-bowfolio-yuhan/Pods-bowfolio-yuhan.debug.xcconfig"; sourceTree = "<group>"; };
+		3915844D250313550080C1FC /* bowfolio-yuhan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "bowfolio-yuhan.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		39158450250313550080C1FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		39158452250313550080C1FC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		39158456250313590080C1FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		39158459250313590080C1FC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3915845C250313590080C1FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3915845E250313590080C1FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39158464250314130080C1FC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		391584662503186C0080C1FC /* SessionStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
+		3915846B250319390080C1FC /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = ../../../../../../Desktop/FireAuthTest/FireAuthTest/Views/ContentView.swift; sourceTree = "<group>"; };
+		3915846D250319E30080C1FC /* AuthView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		3915846F25031A120080C1FC /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		3915847125031A4A0080C1FC /* SignUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		9C219E291FCCCC30177C8628 /* Pods_bowfolio_yuhan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_bowfolio_yuhan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC8A515D7A6E61A6C362AFC0 /* Pods-bowfolio-yuhan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bowfolio-yuhan.release.xcconfig"; path = "Target Support Files/Pods-bowfolio-yuhan/Pods-bowfolio-yuhan.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3915844A250313550080C1FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DFFB6D372BC8C2D7A9FA1B5 /* Pods_bowfolio_yuhan.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		39158444250313550080C1FC = {
+			isa = PBXGroup;
+			children = (
+				3915844F250313550080C1FC /* bowfolio-yuhan */,
+				3915844E250313550080C1FC /* Products */,
+				897602656CE2A67AE8009527 /* Pods */,
+				4F581ABDF6F63034D51CB9C4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3915844E250313550080C1FC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3915844D250313550080C1FC /* bowfolio-yuhan.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3915844F250313550080C1FC /* bowfolio-yuhan */ = {
+			isa = PBXGroup;
+			children = (
+				3915846A250318980080C1FC /* Models */,
+				391584692503188F0080C1FC /* Views */,
+				39158468250318860080C1FC /* ViewModels */,
+				39158450250313550080C1FC /* AppDelegate.swift */,
+				39158452250313550080C1FC /* SceneDelegate.swift */,
+				39158456250313590080C1FC /* Assets.xcassets */,
+				3915845B250313590080C1FC /* LaunchScreen.storyboard */,
+				39158464250314130080C1FC /* GoogleService-Info.plist */,
+				3915845E250313590080C1FC /* Info.plist */,
+				39158458250313590080C1FC /* Preview Content */,
+			);
+			path = "bowfolio-yuhan";
+			sourceTree = "<group>";
+		};
+		39158458250313590080C1FC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				39158459250313590080C1FC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		39158468250318860080C1FC /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				391584662503186C0080C1FC /* SessionStore.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		391584692503188F0080C1FC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3915846B250319390080C1FC /* ContentView.swift */,
+				3915847125031A4A0080C1FC /* SignUpView.swift */,
+				3915846D250319E30080C1FC /* AuthView.swift */,
+				3915846F25031A120080C1FC /* MainView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3915846A250318980080C1FC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4F581ABDF6F63034D51CB9C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9C219E291FCCCC30177C8628 /* Pods_bowfolio_yuhan.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		897602656CE2A67AE8009527 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				137DA8776D764BA42833E7AF /* Pods-bowfolio-yuhan.debug.xcconfig */,
+				DC8A515D7A6E61A6C362AFC0 /* Pods-bowfolio-yuhan.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3915844C250313550080C1FC /* bowfolio-yuhan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39158461250313590080C1FC /* Build configuration list for PBXNativeTarget "bowfolio-yuhan" */;
+			buildPhases = (
+				CC654E98828C547D4FB1D79D /* [CP] Check Pods Manifest.lock */,
+				39158449250313550080C1FC /* Sources */,
+				3915844A250313550080C1FC /* Frameworks */,
+				3915844B250313550080C1FC /* Resources */,
+				7270F20C5EF2CFF29543901B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "bowfolio-yuhan";
+			productName = "bowfolio-yuhan";
+			productReference = 3915844D250313550080C1FC /* bowfolio-yuhan.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		39158445250313550080C1FC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1170;
+				LastUpgradeCheck = 1170;
+				ORGANIZATIONNAME = "Yuhan Jiang";
+				TargetAttributes = {
+					3915844C250313550080C1FC = {
+						CreatedOnToolsVersion = 11.7;
+					};
+				};
+			};
+			buildConfigurationList = 39158448250313550080C1FC /* Build configuration list for PBXProject "bowfolio-yuhan" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 39158444250313550080C1FC;
+			productRefGroup = 3915844E250313550080C1FC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3915844C250313550080C1FC /* bowfolio-yuhan */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3915844B250313550080C1FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3915845D250313590080C1FC /* LaunchScreen.storyboard in Resources */,
+				39158465250314130080C1FC /* GoogleService-Info.plist in Resources */,
+				3915845A250313590080C1FC /* Preview Assets.xcassets in Resources */,
+				39158457250313590080C1FC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7270F20C5EF2CFF29543901B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-bowfolio-yuhan/Pods-bowfolio-yuhan-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-bowfolio-yuhan/Pods-bowfolio-yuhan-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-bowfolio-yuhan/Pods-bowfolio-yuhan-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC654E98828C547D4FB1D79D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-bowfolio-yuhan-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		39158449250313550080C1FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39158451250313550080C1FC /* AppDelegate.swift in Sources */,
+				3915847025031A120080C1FC /* MainView.swift in Sources */,
+				3915846E250319E30080C1FC /* AuthView.swift in Sources */,
+				3915847225031A4A0080C1FC /* SignUpView.swift in Sources */,
+				3915846C250319390080C1FC /* ContentView.swift in Sources */,
+				39158453250313550080C1FC /* SceneDelegate.swift in Sources */,
+				391584672503186C0080C1FC /* SessionStore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3915845B250313590080C1FC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3915845C250313590080C1FC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3915845F250313590080C1FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		39158460250313590080C1FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		39158462250313590080C1FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 137DA8776D764BA42833E7AF /* Pods-bowfolio-yuhan.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"bowfolio-yuhan/Preview Content\"";
+				DEVELOPMENT_TEAM = 5BBX9U2PRR;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "bowfolio-yuhan/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mira.bowfolio-yuhan";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		39158463250313590080C1FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC8A515D7A6E61A6C362AFC0 /* Pods-bowfolio-yuhan.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"bowfolio-yuhan/Preview Content\"";
+				DEVELOPMENT_TEAM = 5BBX9U2PRR;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "bowfolio-yuhan/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mira.bowfolio-yuhan";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		39158448250313550080C1FC /* Build configuration list for PBXProject "bowfolio-yuhan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3915845F250313590080C1FC /* Debug */,
+				39158460250313590080C1FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39158461250313590080C1FC /* Build configuration list for PBXNativeTarget "bowfolio-yuhan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39158462250313590080C1FC /* Debug */,
+				39158463250313590080C1FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 39158445250313550080C1FC /* Project object */;
+}

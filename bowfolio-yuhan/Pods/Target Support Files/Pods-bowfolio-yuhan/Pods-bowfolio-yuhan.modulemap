@@ -1,0 +1,6 @@
+framework module Pods_bowfolio_yuhan {
+  umbrella header "Pods-bowfolio-yuhan-umbrella.h"
+
+  export *
+  module * { export * }
+}
