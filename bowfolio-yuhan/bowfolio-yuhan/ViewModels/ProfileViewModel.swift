@@ -8,6 +8,7 @@
 
 import Foundation
 import FirebaseFirestore
+import FirebaseFirestoreSwift
 
 class ProfileViewModel: ObservableObject {
     
@@ -15,11 +16,20 @@ class ProfileViewModel: ObservableObject {
     private var db = Firestore.firestore()
     
     func fetchData() {
-        profiles = []
+        let ref = db.collection("Profiles")
+        ref.addSnapshotListener { (snap, error) in
+            guard let documents = snap?.documents else {
+                print("no documents")
+                return
+            }
+            
+            self.profiles = documents.compactMap({ (docSnap) -> Profile? in
+//                print(try? docSnap.data(as: Profile.self))
+                return try? docSnap.data(as: Profile.self)
+            })
+            
+        }
         
         
     }
-
-    
-    
 }

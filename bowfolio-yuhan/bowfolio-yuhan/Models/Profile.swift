@@ -7,14 +7,24 @@
 //
 
 import Foundation
+import FirebaseFirestoreSwift
 
-struct Profile: Identifiable {
+struct Profile: Identifiable, Codable {
 
-    var id: String = ""
+    @DocumentID var id: String? = UUID().uuidString
     var name: String = ""
     var comment: String = ""
     var projects: [String] = [""]
     var interests: [String] = [""]
     var avatar: String = ""
+    
+    enum Codingkeys: String, CodingKey {
+        case id
+        case name
+        case comment
+        case projects
+        case interests
+        case avatar
+    }
     
 }

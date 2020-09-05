@@ -9,6 +9,8 @@
 import SwiftUI
 
 struct MainView: View {
+    @EnvironmentObject var session: SessionStore
+    @EnvironmentObject var profiles: ProfileViewModel
     
     var body: some View {
         VStack {
@@ -48,15 +50,13 @@ struct MainView: View {
                 }.tag(3)
                 
             }.background(Color("bg4"))
-        }.edgesIgnoringSafeArea(.top)
+        }
+        .edgesIgnoringSafeArea(.top)
+        .onAppear {
+            self.profiles.fetchData()
+        }
     }
     
-}
-
-struct MainView_Previews: PreviewProvider {
-    static var previews: some View {
-        MainView()
-    }
 }
 
 struct TopBar: View {
@@ -90,5 +90,11 @@ struct TopBar: View {
         .padding()
         .padding(.top, (UIApplication.shared.windows.last?.safeAreaInsets.top)! + 10)
         .background(Color("bg1"))
+    }
+}
+
+struct MainView_Previews: PreviewProvider {
+    static var previews: some View {
+        MainView().environmentObject(SessionStore()).environmentObject(ProfileViewModel())
     }
 }

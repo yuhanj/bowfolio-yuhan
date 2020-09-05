@@ -13,6 +13,7 @@ struct SignInView: View {
     @State var password: String = ""
     @State var error: String = ""
     @EnvironmentObject var session: SessionStore
+    @EnvironmentObject var profiles: ProfileViewModel
     
     func signIn() {
         session.signIn(email: email, password: password) { (result, error) in
@@ -96,6 +97,6 @@ struct AuthView: View {
 
 struct SwiftUIView_Previews: PreviewProvider {
     static var previews: some View {
-        AuthView().environmentObject(SessionStore())
+        AuthView().environmentObject(SessionStore()).environmentObject(ProfileViewModel())
     }
 }
