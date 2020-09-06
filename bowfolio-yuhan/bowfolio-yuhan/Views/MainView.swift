@@ -11,10 +11,11 @@ import SwiftUI
 struct MainView: View {
     @EnvironmentObject var session: SessionStore
     @EnvironmentObject var profiles: ProfileViewModel
+    @Binding var selection: Int
     
     var body: some View {
         VStack {
-            TopBar()
+            TopBar(selection: $selection)
             TabView {
                 
                 ProfilesView()
@@ -54,12 +55,14 @@ struct MainView: View {
         .edgesIgnoringSafeArea(.top)
         .onAppear {
             self.profiles.fetchData()
+
         }
     }
     
 }
 
 struct TopBar: View {
+    @Binding var selection: Int
     var body: some View {
         VStack (spacing: 20){
             HStack {
@@ -78,7 +81,7 @@ struct TopBar: View {
                 }.padding(.trailing, 20)
                 
                 Button(action: {
-                    // button action
+                    self.selection = 1
                 }) {
                     Image(systemName: "person.fill")
                         .font(.system(size: 22))
@@ -94,7 +97,15 @@ struct TopBar: View {
 }
 
 struct MainView_Previews: PreviewProvider {
-    static var previews: some View {
-        MainView().environmentObject(SessionStore()).environmentObject(ProfileViewModel())
+  static var previews: some View {
+    PreviewWrapper()
+  }
+
+  struct PreviewWrapper: View {
+    @State(initialValue: 0) var selection: Int
+
+    var body: some View {
+        MainView(selection: $selection).environmentObject(SessionStore()).environmentObject(ProfileViewModel())
     }
+  }
 }

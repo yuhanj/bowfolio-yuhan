@@ -15,15 +15,10 @@ struct ProfilesView: View {
     
     
     var body: some View {
-//        List(self.profiles.profiles){ profile in
-//            ProfileRowView(profile: profile)
-//        }
-        Button(action: {
-            self.profiles.fetchData()
-            print(self.profiles.profiles)
-        }) {
-            Text("refresh")
+        List(self.profiles.profiles){ profile in
+            ProfileRowView(profile: profile)
         }
+
     }
 }
 

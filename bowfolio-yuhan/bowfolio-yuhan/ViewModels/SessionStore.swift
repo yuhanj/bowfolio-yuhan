@@ -24,8 +24,9 @@ class SessionStore: ObservableObject {
         return self.session?.email ?? ""
     }
     
+    // create a default profile linked to the userID
     func createProfile() {
-        db.collection("Profiles").document(session?.uid ?? "007").setData(["name": session?.email ?? "", "id": session?.uid ?? "007", "comment": "Say something!", "projects": [String](), "interests": [String](), "avatar": "https://randomuser.me/api/portraits/men/97.jpg"
+        db.collection("Profiles").document(session?.uid ?? "007").setData(["name": session?.email ?? "", "id": session?.uid ?? "007", "title": "Student", "comment": "Say something here!", "projects": [String](), "interests": [String](), "avatar": "defaultAvatar"
         ], merge: true)
         
     }

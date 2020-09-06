@@ -13,6 +13,7 @@ struct Profile: Identifiable, Codable {
 
     @DocumentID var id: String? = UUID().uuidString
     var name: String = ""
+    var title: String = ""
     var comment: String = ""
     var projects: [String] = [""]
     var interests: [String] = [""]
@@ -21,6 +22,7 @@ struct Profile: Identifiable, Codable {
     enum Codingkeys: String, CodingKey {
         case id
         case name
+        case title
         case comment
         case projects
         case interests
